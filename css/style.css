@@ -1,28 +1,230 @@
-.container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "header header"
-    "main aside"
-    "footer footer"
-    ;
-}
-
 header {
 grid-area: header;
+margin-bottom: 14px;
 
+   
 }
+
+        .logga {
+    background-color: aqua;
+    width: auto;
+    height: 150px;
+        }
+
+        .meny {
+    background-color: brown;
+    width: auto;
+    height: 50px;
+        }
+        
 
 main {    
+    margin-right: 14px;
     grid-area: main;
+    background-color: white;
+    width: auto;
+    gap: 14px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mainslideshow"
+    "articleblock1"
+    "articleblock2"
 }
+
+        .slideshow {    
+grid-area: mainslideshow ;
+height: 200px;
+background-color: yellow;
+        }
+
+        .articleblock1 {
+            grid-area: articleblock1;
+        }
+
+        .articleblock2 {
+            grid-area: articleblock2;
+        }
+
+                .articlesHeadline {
+    grid-area: articlesHeadline;
+    background-color: pink;
+                }
+
+                .article1 {
+    grid-area: article1;
+    background-color: greenyellow;
+   
+                }
+
+                .article2 {
+grid-area: article2 ;
+background-color: violet;
+                }
+
+                .article3 {
+grid-area: article3 ;
+background-color: green;
+                }
+
+                .article {
+                    display: grid;
+                    row-gap: 0px;
+                    grid-template-areas: 
+            "articlepicture"
+            "articletext";
+                }
+
+                .articletext{
+                    grid-area: articletext;
+                    background-color: palevioletred;
+                }
+
+                .articlepicture {
+                    grid-area: articlepicture;
+                    height: 150px;
+                    background-color: blue;
+                   
+                }
+
 
 aside {
     grid-area: aside;
+    background-color: antiquewhite;
+    width: auto;
 }
 
 footer{
     grid-area: footer;
+    background-color: aquamarine;
+    width: auto;
+    height: 100px;
+    margin-top: 14px;
 }
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+        .container {
+                max-width: 960px;
+                display: grid;
+                grid-template-rows: auto;
+                height: auto;
+                grid-template-columns: 5fr 2fr;
+                grid-template-areas: 
+                "header header"
+                "main aside"
+                "extra aside"
+                "footer footer";
+            }}
+
+@media screen and (min-width: 525px) {
+    
+  
+   .article {
+       margin-bottom: 14px;;
+   }
+
+   .slideshow {
+       margin-bottom: 14px;
+   }
+
+  
+
+        
+
+            .threeArticleBlocks {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                column-gap: 14px;
+                
+                grid-template-areas: 
+                "articlesHeadline articlesHeadline articlesHeadline"
+                "article1 article2 article3"
+                ;
+            }
+        }
+
+@media screen and (max-width: 525px) {
+    .container {
+    min-width: 200px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-column: 1fr;
+   
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "footer";
+    }
+
+
+    aside {
+      
+        margin-top: 14px;
+    }
+
+    .slideshow {
+        display: none;
+    }
+
+    .threeArticleBlocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 14px;
+        
+        grid-template-areas: 
+        "articlesHeadline articlesHeadline"
+        "article1 article2"
+        "article3 ."
+        ;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+    min-width: 200px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-column: 1fr;
+   
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "footer";
+    }
+
+    .threeArticleBlocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 14px;
+        
+        grid-template-areas: 
+        "articlesHeadline"
+        "article1" 
+        "article2"
+        "article3"
+        ;
+    }
+
+    aside {
+        margin-left: 0px;
+        margin-top: 14px;
+    }
+
+    .slideshow {
+        display: none;
+    }
+}
+
 
