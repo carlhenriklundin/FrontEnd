@@ -106,12 +106,24 @@ footer{
     grid-area: footer;
     background-color: aquamarine;
     width: auto;
-    height: 100px;
     margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "leftfooter middlefooter rightfooter";
 }
 
+.leftfooter {
+    grid-area: leftfooter;
+}
 
+.middlefooter {
+    grid-area: middlefooter;
+}
 
+.rightfooter {
+    grid-area: rightfooter;
+}
 
 
 
@@ -203,6 +215,13 @@ footer{
     .article{
         margin-bottom: 14px;
     }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "leftfooter middlefooter"
+        "rightfooter .";
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -242,7 +261,13 @@ footer{
         display: none;
     }
 
-    
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "leftfooter"
+        "middlefooter"
+        "rightfooter"
+    }
 }
 
 
