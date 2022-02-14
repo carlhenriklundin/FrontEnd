@@ -40,8 +40,6 @@ main {
 
         .slideshow {    
 grid-area: mainslideshow ;
-height: 200px;
-background-color: yellow;
         }
 
         .articleblock1 {
@@ -116,7 +114,7 @@ aside {
 
 footer{
     grid-area: footer;
-    background-color: aquamarine;
+    background-color: lightgray;
     width: auto;
     margin-top: 14px;
     display: grid;
