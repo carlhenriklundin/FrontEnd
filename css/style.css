@@ -92,14 +92,26 @@ grid-area: article3 ;
                    
                 }
 
-                .articlePictures { height: 150px; width: 180px;}
+                .articlePictures { height: 150px; width: 170px;}
 
 
 
 aside {
     grid-area: aside;
-    background-color: antiquewhite;
+    background-color: aquamarine;
     width: auto;
+    max-height: 100%;
+    display: block;
+}
+
+
+
+.asidePictures {
+    max-width: 100%;
+}
+
+.asideForm {
+    grid-area: asideForm;
 }
 
 footer{
@@ -127,7 +139,7 @@ footer{
 
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
         .container {
                 max-width: 960px;
                 display: grid;
@@ -137,13 +149,13 @@ footer{
                 grid-template-areas: 
                 "header header"
                 "main aside"
-                "extra aside"
+                "main ."
                 "footer footer";
             }
     
         }
 
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 565px) {
     
   
    .article {
@@ -173,7 +185,7 @@ footer{
             .logga2 {display: none;}
         }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 565px) {
     .container {
     min-width: 200px;
     display: grid;
@@ -224,7 +236,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 395px) {
     .container {
     min-width: 200px;
     display: grid;
