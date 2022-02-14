@@ -1,3 +1,7 @@
+.articlesHeadline {
+    color: green;
+}
+
 header {
 grid-area: header;
 margin-bottom: 14px;
@@ -7,8 +11,7 @@ margin-bottom: 14px;
 
         .logga {
     background-color: aqua;
-    width: auto;
-    height: 150px;
+    max-width: 100%;
         }
 
         .meny {
@@ -85,6 +88,7 @@ background-color: green;
                 .articlepicture {
                     grid-area: articlepicture;
                     height: 150px;
+                    max-width: 100%;
                     background-color: blue;
                    
                 }
@@ -149,6 +153,8 @@ footer{
                 "article1 article2 article3"
                 ;
             }
+
+            .logga2 {display: none;}
         }
 
 @media screen and (max-width: 525px) {
@@ -186,6 +192,12 @@ footer{
         "article1 article2"
         "article3 ."
         ;
+    }
+
+    .logga1 {display: none;}
+
+    .article{
+        margin-bottom: 14px;
     }
 }
 
@@ -225,6 +237,8 @@ footer{
     .slideshow {
         display: none;
     }
+
+    
 }
 
 
