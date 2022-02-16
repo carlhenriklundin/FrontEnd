@@ -84,11 +84,13 @@ grid-area: mainslideshow ;
                 .articlesHeadline {
     grid-area: articlesHeadline;
     color: brown;
+    margin-top: 10px;
+    margin-bottom: 10px;
                 }
 
     .articlesHeadline h1 {
         margin: 0px;
-        font-size: 20px;
+        font-size: 25px;
     }
 
 
@@ -117,6 +119,11 @@ grid-area: article3 ;
                     grid-area: articletext;
                 }
 
+                .articletext p {
+                    margin: 0px;
+                    color: brown;
+                }
+
                 .articlepicture {
                     grid-area: articlepicture;
                     height: 150px;
@@ -142,7 +149,7 @@ aside {
 .nextTime {
     margin-top: 14px;;
     border-width: 4px;
-    border-style:dotted;
+    border-style:solid;
     border-color: brown;
 }
 aside p {
@@ -177,6 +184,8 @@ input {
     width: 100%;
     margin-bottom: 14px;;
 }
+
+
 
 aside h4 {
     text-align: center;
@@ -253,10 +262,11 @@ footer{
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: auto;
                 column-gap: 14px;
-                border-width: 4px;
+                border-width: 7px;
+                padding-left: 14px;
+                padding-right: 14px;;
     border-style:dotted;
     border-color: brown;
-                
                 grid-template-areas: 
                 "articlesHeadline articlesHeadline articlesHeadline"
                 "article1 article2 article3"
