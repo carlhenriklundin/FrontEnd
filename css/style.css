@@ -17,7 +17,7 @@ margin-bottom: 14px;
         .meny {
     background-color: brown;
     width: auto;
-    height: 50px;
+    height: 25px;
         }
         
 
@@ -96,12 +96,58 @@ grid-area: article3 ;
 
 aside {
     grid-area: aside;
-    background-color: aquamarine;
+    border: 5px;
+    background-color: rgb(rgb(57, 221, 65), green, blue);
+    
     width: auto;
     max-height: 100%;
     display: block;
+    margin-left: 10px;
 }
 
+.nextTime {
+    margin-top: 14px;;
+    border-width: 4px;
+    border-style:dotted;
+    border-color: black;
+}
+aside p {
+    text-align: center;
+    font-size: 20px;
+}
+
+aside h3 {
+    margin-top: 0px;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+aside h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside h5 {
+    font-style: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+form p {
+    text-align: left;
+    font-size: 15px;
+    margin: 0px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 14px;;
+}
+
+aside h4 {
+    text-align: center;
+    font-size: 25px;
+}
 
 
 .asidePictures {
