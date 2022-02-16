@@ -33,21 +33,36 @@ main {
     grid-template-rows: auto;
     grid-template-areas: 
     "mainslideshow"
+    "citat1"
     "articleblock1"
-    "citat"
+    "citat2"
     "articleblock2"
 }
 
         .slideshow {    
 grid-area: mainslideshow ;
+
         }
 
         .articleblock1 {
             grid-area: articleblock1;
         }
 
-        .citat {
-            grid-area: citat;
+        .citat1 {
+            grid-area: citat1;
+        }
+
+        .citat2 {
+            grid-area: citat2;
+        }
+
+        .citat h2{
+            text-align: center;
+            color: green;
+            font-size: 25px;
+            font-family: 'Averia Serif Libre';
+
+            
         }
 
         .articleblock2 {
