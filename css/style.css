@@ -59,10 +59,22 @@ grid-area: mainslideshow ;
         .citat h2{
             text-align: center;
             color: green;
-            font-size: 25px;
+            font-size: 35px;
             font-family: 'Averia Serif Libre';
+            margin-left: 40px;
+            margin-right: 40px; 
+        }
 
-            
+        .citat {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
+        .citat img {
+            display: block;
+            max-width: 150px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .articleblock2 {
@@ -71,7 +83,14 @@ grid-area: mainslideshow ;
 
                 .articlesHeadline {
     grid-area: articlesHeadline;
+    color: brown;
                 }
+
+    .articlesHeadline h1 {
+        margin: 0px;
+        font-size: 20px;
+    }
+
 
                 .article1 {
     grid-area: article1;
@@ -234,6 +253,9 @@ footer{
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: auto;
                 column-gap: 14px;
+                border-width: 4px;
+    border-style:dotted;
+    border-color: brown;
                 
                 grid-template-areas: 
                 "articlesHeadline articlesHeadline articlesHeadline"
