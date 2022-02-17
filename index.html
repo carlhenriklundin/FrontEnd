@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -26,8 +26,10 @@
             </nav>
 
             <nav>
-                <div class="dropDownMenu">
-                    <p>Meny</p>
+
+                <div class="miniMeny">
+                    <span id="hamburger" class="openMeny cursor" onclick="openMenu()"><i class="fa fa-bars"></i></span>
+                <div id="miniMeny1" class="dropDownMenu">
                     <span class="closeMeny cursor" onclick="closeMenu()">&times;</span>
                     <ul>
                         <li><a href="aftonbladet.se">Vad vi måste göra</a></li>
@@ -36,7 +38,7 @@
                     </ul>
 
                 </div>
-
+            </div>
             </nav>
             
             
@@ -159,5 +161,18 @@
     </footer>
 
     </div>
+
+    <script>
+function openMenu() {
+  document.getElementById("miniMeny1").style.display = "block";
+  document.getElementById("hamburger").style.display = "none";
+}
+
+function closeMenu() {
+  document.getElementById("miniMeny1").style.display = "none";
+  document.getElementById("hamburger").style.display = "block";
+}
+
+    </script>
 </body>
 </html>
