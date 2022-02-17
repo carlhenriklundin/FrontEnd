@@ -1,9 +1,22 @@
+.dropDownMenu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px; 
+}
 
+.dropDownMenu a {
+    text-decoration: none;
+    border: 1px solid transparent;
+    color:  white;
+    font-size: 30px;
+    font-style: bold;    
+}
  .navbar ul {
      list-style: none;
      margin: 0px;
      padding: 0px;
  }
+
 
  .navbar li {
      display: inline;
@@ -45,7 +58,8 @@ margin-bottom: 14px;
         .meny {
     background-color: brown;
     width: auto;
-    height: 38px;
+    /* height: 38px; */
+    height: auto;
         }
         
 
@@ -328,6 +342,9 @@ footer{
     "footer";
     }
 
+    .navbar {
+        display: none;
+    }
 
     .articlepicture {
         max-width: 225px;
