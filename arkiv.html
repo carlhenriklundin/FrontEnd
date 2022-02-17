@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/arkiv.css">
+</head>
+<body>
+    
+<div class="lightbox">  
+    <img class="lightboxpictures" src="Pictures/demonstration1.jpg" onclick="openLightBox();SlidePictureNumber(1)">
+    <img class="lightboxpictures" src="Pictures/demonstration2.jpg" onclick="openLightBox();SlidePictureNumber(2)">
+    <img class="lightboxpictures" src="Pictures/demonstration3.jpg" onclick="openLightBox();SlidePictureNumber(3)">
+    <img class="lightboxpictures" src="Pictures/demonstration4.jpg" onclick="openLightBox();SlidePictureNumber(4)">
+    <img class="lightboxpictures" src="Pictures/demonstration5.jpg" onclick="openLightBox();SlidePictureNumber(5)">
+    <img class="lightboxpictures" src="Pictures/demonstration6.jpeg" onclick="openLightBox();SlidePictureNumber(6)">
+</div>   
+      
+<div id="lightBox1" class="lightBoxWindow">
+        <span class="close cursor" onclick="closeLightBox()">&times;</span>
+        
+        <div class="lightBocContent">
+      
+          <div class="lightBoxItem">
+                <img class="lightBoxImage" src="Pictures/demonstration1.jpg">
+          </div>
+      
+          <div class="lightBoxItem">
+                <img class="lightBoxImage" src="Pictures/demonstration2.jpg">
+          </div>
+      
+          <div class="lightBoxItem">
+                <img class="lightBoxImage" src="Pictures/demonstration3.jpg">
+          </div>
+          
+          <div class="lightBoxItem">
+               <img class="lightBoxImage" src="Pictures/demonstration4.jpg">
+          </div>
+
+          <div class="lightBoxItem">
+                <img class="lightBoxImage" src="Pictures/demonstration5.jpg">
+          </div>
+
+          <div class="lightBoxItem">
+                <img class="lightBoxImage" src="Pictures/demonstration6.jpeg">
+          </div>
+          
+
+          <a class="previousImage" onclick="changeSlides(-1)">&#10094;</a>
+          <a class="nextImage" onclick="changeSlides(1)">&#10095;</a>
+      
+
+       <div class="smallpictures">
+          <div class="column">
+            <img class="smallLightBoxItem cursor" src="Pictures/demonstration1.jpg" onclick="SlidePictureNumber(1)">
+          </div>
+          <div class="column">
+            <img class="smallLightBoxItem cursor" src="Pictures/demonstration2.jpg" onclick="SlidePictureNumber(2)">
+          </div>
+          <div class="column">
+            <img class="smallLightBoxItem cursor" src="Pictures/demonstration3.jpg" onclick="SlidePictureNumber(3)">
+          </div>
+          <div class="column">
+            <img class="smallLightBoxItem cursor" src="Pictures/demonstration4.jpg" onclick="SlidePictureNumber(4)">
+          </div>
+          <div class="column">
+            <img class="smallLightBoxItem cursor" src="Pictures/demonstration5.jpg" onclick="SlidePictureNumber(5)">
+          </div>
+          <div class="column">
+            <img class="smallLightBoxItem cursor" src="Pictures/demonstration6.jpeg" onclick="SlidePictureNumber(6)">
+          </div>
+        </div>
+        </div>
+</div>
+         
+
+
+<script>
+function openLightBox() {
+  document.getElementById("lightBox1").style.display = "block";
+}
+
+function closeLightBox() {
+  document.getElementById("lightBox1").style.display = "none";
+}
+
+function SlidePictureNumber(n) {
+  showSlides(slideIndex = n);
+}
+
+function changeSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function showSlides(n) {
+  var slides = document.getElementsByClassName("lightBoxItem");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (var i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

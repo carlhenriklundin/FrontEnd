@@ -1,0 +1,91 @@
+
+.lightboxpictures  {
+    width: 375px;
+    height: 200px;  
+  }
+
+.lightBoxWindow {
+    display: none;
+    position: fixed;
+    align-items: center;
+   
+    padding: 25px;
+    
+    left: 20%;
+    right: 20%;
+    top: 20%;;
+    
+    overflow: auto;
+    background-color: green;
+   
+  }
+  
+ .lightBocContent {
+    position: relative;
+    background-color: brown;
+    margin: auto;
+    padding: 0;
+    border-top: 20px;
+    width: 100%;
+    max-width: 970px;
+    display: block;
+  
+  }
+
+  .lightBoxImage {
+    
+display: block;
+margin-left: auto;
+margin-right: auto;
+    max-width: 562px;
+    height: 300px;  
+    }
+
+    .close {
+        color: white;
+        position: absolute;
+        top: 0px;
+        right: 3px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .close:hover, .close:focus  {
+        cursor: pointer;
+    }
+
+    .previousImage, .nextImage {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-size: 20px;
+        transition: 0.6s ease;
+    }
+
+    .nextImage {
+        right: 0;
+   }
+
+  .lightBoxItem {
+      margin-bottom: 50px;
+      padding-top: 25px;
+  }
+
+.smallLightBoxItem {
+    width: 70px;
+    height: 37px; 
+    opacity: 0.6;
+    margin: auto;
+}
+
+.smallpictures {
+    display: block;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column {
+    display: inline-block;
+}
