@@ -68,6 +68,11 @@ margin-right: auto;
         right: 0;
    }
 
+.lbbutton {
+    cursor: pointer;
+
+}
+
   .lightBoxItem {
       margin-bottom: 50px;
       padding-top: 25px;
