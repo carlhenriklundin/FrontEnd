@@ -8,73 +8,178 @@
     <link rel="stylesheet" href="css/arkiv.css">
 </head>
 <body>
-    
-<div class="lightbox">  
-    <img class="lightboxpictures lbbutton" src="Pictures/demonstration1.jpg" onclick="openLightBox();SlidePictureNumber(1)">
-    <img class="lightboxpictures lbbutton" src="Pictures/demonstration2.jpg" onclick="openLightBox();SlidePictureNumber(2)">
-    <img class="lightboxpictures lbbutton" src="Pictures/demonstration3.jpg" onclick="openLightBox();SlidePictureNumber(3)">
-    <img class="lightboxpictures lbbutton" src="Pictures/demonstration4.jpg" onclick="openLightBox();SlidePictureNumber(4)">
-    <img class="lightboxpictures lbbutton" src="Pictures/demonstration5.jpg" onclick="openLightBox();SlidePictureNumber(5)">
-    <img class="lightboxpictures lbbutton" src="Pictures/demonstration6.jpeg" onclick="openLightBox();SlidePictureNumber(6)">
-</div>   
-      
-<div id="lightBox1" class="lightBoxWindow">
-        <span class="close cursor" onclick="closeLightBox()">&times;</span>
+            
+            <div class="container">
+            <header>
+                <div class="logga">
+                    <div class="logga1"><img src="Pictures/logga.png" alt="Rädda Klimtatet i grön färg" class="logga"></div>
+                    <div class="logga2"><img src="Pictures/loggamini.png" alt="Rädda Klimtatet i grön färg" class="logga"></div>
+                </div>
+                <div class="meny">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="aftonbladet.se">Vad vi måste göra</a></li>
+                            <li><a href="aftonbladet.se">Mediaarkiv</a></li>
+                            <li><a href="aftonbladet.se">Om oss</a></li>
+                        </ul>
+                    </nav>
         
-        <div class="lightBocContent">
-      
-          <div class="lightBoxItem">
-                <img class="lightBoxImage" src="Pictures/demonstration1.jpg">
-          </div>
-      
-          <div class="lightBoxItem">
-                <img class="lightBoxImage" src="Pictures/demonstration2.jpg">
-          </div>
-      
-          <div class="lightBoxItem">
-                <img class="lightBoxImage" src="Pictures/demonstration3.jpg">
-          </div>
-          
-          <div class="lightBoxItem">
-               <img class="lightBoxImage" src="Pictures/demonstration4.jpg">
-          </div>
+                    <nav>
+        
+                        <div class="miniMeny">
+                            <span id="hamburger" class="openMeny cursor" onclick="openMenu()"><i class="fa fa-bars"></i></span>
+                        <div id="miniMeny1" class="dropDownMenu">
+                            <span class="closeMeny cursor" onclick="closeMenu()">&times;</span>
+                            <ul>
+                                <li><a class="miniMenuRubrik" href="aftonbladet.se">Vad vi måste göra</a></li>
+                                <li><a class="miniMenuRubrik" href="aftonbladet.se">Mediaarkiv</a></li>
+                                <li><a class="miniMenuRubrik" href="aftonbladet.se">Om oss</a></li> 
+                            </ul>
+        
+                        </div>
+                    </div>
+                    </nav>
+                    
+                    
+                    </div>
+            </header>
+        
+            <Main>
 
-          <div class="lightBoxItem">
-                <img class="lightBoxImage" src="Pictures/demonstration5.jpg">
-          </div>
+                <div class="lightbox">  
+                    <img class="lightboxpictures lbbutton" src="Pictures/demonstration1.jpg" onclick="openLightBox();SlidePictureNumber(1)">
+                    <img class="lightboxpictures lbbutton" src="Pictures/demonstration2.jpg" onclick="openLightBox();SlidePictureNumber(2)">
+                    <img class="lightboxpictures lbbutton" src="Pictures/demonstration3.jpg" onclick="openLightBox();SlidePictureNumber(3)">
+                    <img class="lightboxpictures lbbutton" src="Pictures/demonstration4.jpg" onclick="openLightBox();SlidePictureNumber(4)">
+                    <img class="lightboxpictures lbbutton" src="Pictures/demonstration5.jpg" onclick="openLightBox();SlidePictureNumber(5)">
+                    <img class="lightboxpictures lbbutton" src="Pictures/demonstration6.jpeg" onclick="openLightBox();SlidePictureNumber(6)">
+                </div>   
+                      
+                <div id="lightBox1" class="lightBoxWindow">
+                        <span class="close cursor" onclick="closeLightBox()">&times;</span>
+                        
+                        <div class="lightBocContent">
+                      
+                          <div class="lightBoxItem">
+                                <img class="lightBoxImage" src="Pictures/demonstration1.jpg">
+                          </div>
+                      
+                          <div class="lightBoxItem">
+                                <img class="lightBoxImage" src="Pictures/demonstration2.jpg">
+                          </div>
+                      
+                          <div class="lightBoxItem">
+                                <img class="lightBoxImage" src="Pictures/demonstration3.jpg">
+                          </div>
+                          
+                          <div class="lightBoxItem">
+                               <img class="lightBoxImage" src="Pictures/demonstration4.jpg">
+                          </div>
+                
+                          <div class="lightBoxItem">
+                                <img class="lightBoxImage" src="Pictures/demonstration5.jpg">
+                          </div>
+                
+                          <div class="lightBoxItem">
+                                <img class="lightBoxImage" src="Pictures/demonstration6.jpeg">
+                          </div>
+                          
+                
+                          <a class="previousImage" onclick="changeSlides(-1)">&#10094;</a>
+                          <a class="nextImage" onclick="changeSlides(1)">&#10095;</a>
+                      
+                
+                       <div class="smallpictures">
+                          <div class="column">
+                            <img class="smallLightBoxItem   lbbutton" src="Pictures/demonstration1.jpg" onclick="SlidePictureNumber(1)">
+                          </div>
+                          <div class="column">
+                            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration2.jpg" onclick="SlidePictureNumber(2)">
+                          </div>
+                          <div class="column">
+                            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration3.jpg" onclick="SlidePictureNumber(3)">
+                          </div>
+                          <div class="column">
+                            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration4.jpg" onclick="SlidePictureNumber(4)">
+                          </div>
+                          <div class="column">
+                            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration5.jpg" onclick="SlidePictureNumber(5)">
+                          </div>
+                          <div class="column">
+                            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration6.jpeg" onclick="SlidePictureNumber(6)">
+                          </div>
+                        </div>
+                        </div>
+                </div>
+                         
 
-          <div class="lightBoxItem">
-                <img class="lightBoxImage" src="Pictures/demonstration6.jpeg">
-          </div>
-          
 
-          <a class="previousImage" onclick="changeSlides(-1)">&#10094;</a>
-          <a class="nextImage" onclick="changeSlides(1)">&#10095;</a>
-      
 
-       <div class="smallpictures">
-          <div class="column">
-            <img class="smallLightBoxItem   lbbutton" src="Pictures/demonstration1.jpg" onclick="SlidePictureNumber(1)">
-          </div>
-          <div class="column">
-            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration2.jpg" onclick="SlidePictureNumber(2)">
-          </div>
-          <div class="column">
-            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration3.jpg" onclick="SlidePictureNumber(3)">
-          </div>
-          <div class="column">
-            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration4.jpg" onclick="SlidePictureNumber(4)">
-          </div>
-          <div class="column">
-            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration5.jpg" onclick="SlidePictureNumber(5)">
-          </div>
-          <div class="column">
-            <img class="smallLightBoxItem  lbbutton" src="Pictures/demonstration6.jpeg" onclick="SlidePictureNumber(6)">
-          </div>
-        </div>
-        </div>
-</div>
-         
+
+
+
+
+
+
+
+
+                </main>
+        
+            <aside>
+                    <h3>Demonstrera!</h3>
+                    <img class="asidePictures" src="Pictures/demostration.jpg" alt="">
+                    <div class="nextTime">
+                        <h4>Nästa tillfälle:</h4>
+                        <p>Torsdag 19 mars 2021 kl 15:00 Sergels Torg </p>
+                    </div>
+                    <h5>Gör en intresseanmälan:</h5>
+                    <form action="wwww.raddaklimatet.se">
+                        <p>Namn:</p>
+                        <input type="text" name="personName">
+                        <p>Epost:</p>
+                        <input type="text" name="email">
+                        <input type="submit" name="signUp" value="Skicka">
+                    </form>
+            </aside>
+            
+            <footer>
+                
+                <div class="leftfooter">
+                   <p>Rädda Klimatet AB</p>
+                   <p>Nils Holgerssons gatan 5</p>
+                   <p>193 23 Borås</p>
+                </div>
+        
+                <div class="middlefooter">
+                    <p>0705 - 456 123</p>
+                    <p>info@raddaklimatet.se</p>
+                    <p>www.raddaklimatet.se</p>
+                 </div>
+        
+                 <div class="rightfooter">
+                    <p>Org.nr. 456456-4564</p>
+                    <p></p>
+                    <p></p>
+                 </div>
+            </footer>
+        
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script>
@@ -97,7 +202,7 @@ function changeSlides(n) {
 
 function showSlides(n) {
   var slides = document.getElementsByClassName("lightBoxItem");
-  var dots = document.getElementsByClassName("demo");
+  var dots = document.getElementsByClassName("smallLightBoxItem");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (var i = 0; i < slides.length; i++) {
@@ -108,7 +213,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 </script>

@@ -94,3 +94,8 @@ margin-right: auto;
 .column {
     display: inline-block;
 }
+
+.active {
+  opacity: 1;
+}
+
