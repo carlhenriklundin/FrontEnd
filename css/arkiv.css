@@ -1,3 +1,47 @@
+
+.knapp {
+    color: green;
+    font-size: 20px;
+    font-family:'Averia Serif Libre' ;
+
+}
+
+.history {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 14px;
+    max-width: 300px;
+}
+
+.history p {
+    color: black;
+}
+
+
+
+
+#history1 {
+    display: none;
+    background-color: green;
+}
+
+#history2 {
+    display: none;
+    background-color: brown;
+}
+
+#history3 {
+    display: none;
+    background-color: green;
+}
+
+.history img {
+    width: 300px;
+    height: 250px;
+}
+
 .lightbox{
     display: flex;
     flex-direction: row;
@@ -69,7 +113,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
     width: 100%;
-    height: 100%;  
+    max-height: 100%;  
     }
 
     .close {

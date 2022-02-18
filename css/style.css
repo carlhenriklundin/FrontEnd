@@ -70,7 +70,7 @@ header a {
 
  .navbar a:hover {
      color:  black;     
-     border-color:  black;
+    
      margin-top: 10px;
      margin-bottom: 10px;
  }
@@ -96,7 +96,7 @@ margin-bottom: 14px;
     background-color: brown;
     width: auto;
     /* height: 38px; */
-    mini-height: 20px;
+    min-height: 20px;
     height: auto;
         }
         
@@ -177,6 +177,7 @@ grid-area: mainslideshow ;
 
                 .articletext p {
                     margin: 0px;
+                    margin-top: 5px;
                     color: brown;
                 }
 

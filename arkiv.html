@@ -3,11 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rädda klimatet - Hem</title>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/arkiv.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script rel="text/javascript" src="javascript.js"></script>
 </head>
 <body>
 
@@ -22,7 +23,7 @@
                 <ul>
                     <li><a href="index.html">Hem</a></li>
                     <li><a href="arkiv.html">Mediaarkiv</a></li>
-                    <li><a href="aftonbladet.se">Om oss</a></li>
+                    <li><a href="about.html">Om oss</a></li>
                 </ul>
             </nav>
 
@@ -35,7 +36,7 @@
                     <ul>
                         <li><a class="miniMenuRubrik" href="index.html">Hem</a></li>
                         <li><a class="miniMenuRubrik" href="arkiv.html">Mediaarkiv</a></li>
-                        <li><a class="miniMenuRubrik" href="aftonbladet.se">Om oss</a></li> 
+                        <li><a class="miniMenuRubrik" href="about.html">Om oss</a></li> 
                     </ul>
 
                 </div>
@@ -199,76 +200,6 @@
     </footer>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-               
-                         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-function openLightBox() {
-  document.getElementById("lightBox1").style.display = "block";
-}
-
-function closeLightBox() {
-  document.getElementById("lightBox1").style.display = "none";
-}
-
-function SlidePictureNumber(n) {
-  showSlides(slideIndex = n);
-}
-
-function changeSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-
-function showSlides(n) {
-  var slides = document.getElementsByClassName("lightBoxItem");
-  var dots = document.getElementsByClassName("smallLightBoxItem");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  
-  for (var i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (var i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
-
-</script>
-
-
-
-
 
 
 </body>
