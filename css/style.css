@@ -69,8 +69,10 @@ header a {
  }
 
  .navbar a:hover {
-     color:  green;
-     border-color:  green transparent;
+     color:  black;     
+     border-color:  black;
+     margin-top: 10px;
+     margin-bottom: 10px;
  }
 
  
@@ -94,6 +96,7 @@ margin-bottom: 14px;
     background-color: brown;
     width: auto;
     /* height: 38px; */
+    mini-height: 20px;
     height: auto;
         }
         

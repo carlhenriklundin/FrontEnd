@@ -1,28 +1,59 @@
+.lightbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-around;
+    gap:14px;
+}
+
+
+.SideHeadline img {
+    display: block;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: green;
+  font-size: 35px;
+  font-family: 'Averia Serif Libre';
+  margin-left: auto;
+  margin-right: auto;  
+}
 
 .lightboxpictures  {
-    width: 375px;
-    height: 200px;  
+    width: 180px;
+    height: 100px; 
+
   }
 
 .lightBoxWindow {
     display: none;
     position: fixed;
     align-items: center;
-   
-    padding: 25px;
-    
-    left: 20%;
-    right: 20%;
-    top: 20%;;
-    
-    overflow: auto;
-    background-color: green;
-   
+    padding: 25px; 
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    background-color: black;
+    overflow: auto;   
   }
+
+  .lightboxMini {
+  display: none;
+  position: fixed;
+  padding: 25px;
+  left: 5%;
+  right: 5%;
+  background-color: black;   
+}
+
   
  .lightBocContent {
     position: relative;
-    background-color: brown;
+    background-color: black;
     margin: auto;
     padding: 0;
     border-top: 20px;
@@ -37,8 +68,8 @@
 display: block;
 margin-left: auto;
 margin-right: auto;
-    max-width: 562px;
-    height: 300px;  
+    width: 100%;
+    height: 100%;  
     }
 
     .close {
@@ -74,7 +105,7 @@ margin-right: auto;
 }
 
   .lightBoxItem {
-      margin-bottom: 50px;
+      margin-bottom: 25px;
       padding-top: 25px;
   }
 
@@ -98,4 +129,5 @@ margin-right: auto;
 .active {
   opacity: 1;
 }
+
 
